@@ -1,1 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    width: 400px;
+    height: 576px;
+    text-align: center;
+    font-family: cursive;
+    padding: 0;
+    margin: 0;
+}
+
+#logo-wrapper {
+    margin-top: 0px;
+    height: 100px;
+    background: #FFB9B7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab-bar {
+
+    height: 40px;
+    margin-top: 10px;
+    border-bottom: 1px solid gray;
+
+}
+
+.tab-btn {
+    margin: 0;
+    color: gray;
+    display: inline-block;
+    font-size: 150%;
+    width: 49%;
+    height: 90%;
+
+
+}
+
+.bottom-border {
+    width: 49%;
+    height: 4px;
+    border-bottom: 2px solid #ff5d5d;
+    position:absolute;
+}
+
+#login-btn {
+    color: #ff5d5d;
+}
+
+.moveforward {
+   
+    -webkit-animation-name: moveforward;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.5s;
+    /* Safari 4.0 - 8.0 */
+     -webkit-animation-fill-mode: forwards;
+    
+    animation-name: moveforward;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes moveforward {
+     from {
+        left: 0px;
+    }
+
+    to {
+       left: 51%;
+    }
+}
+
+/* Standard syntax */
+@keyframes moveforward {
+    from {
+        left: 0px;
+    }
+
+    to {
+       left: 51%;
+    }
+}
+.movebackward {
+   
+    -webkit-animation-name: movebackward;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.5s;
+    /* Safari 4.0 - 8.0 */
+     -webkit-animation-fill-mode: forwards;
+    
+    animation-name: movebackward;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes movebackward {
+     from {
+        left: 51%;
+    }
+
+    to {
+       left: 0px;
+    }
+}
+
+/* Standard syntax */
+@keyframes movebackward {
+    from {
+        left: 51%;
+    }
+
+    to {
+       left: 0px;
+    }
+}
+
 
